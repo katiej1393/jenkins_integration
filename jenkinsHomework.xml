@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="845a00f1-8e55-4380-90d2-bf86d0e80300" activeEnvironment="Default" name="GroovyHomework" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite1"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="TestCase1"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="0617db2d-9a52-44c4-bd77-0a9964ef72ed" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://demoqa.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://demoqa.com</con:endpoint></con:endpoints><con:resource name="Books" path="/BookStore/v1/Books" id="0b6ef243-4d4e-4218-aa84-7ee53e82e489"><con:settings/><con:parameters/><con:method name="Books 1" id="d0984917-63b6-4567-925d-99ae0b84cc94" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:book="https://demoqa.com/BookStore/v1/Books">book:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="4143b13f-6b3c-4666-8e22-5e676cabba17" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://demoqa.com</con:endpoint><con:request/><con:originalUri>https://demoqa.com/BookStore/v1/Books</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="9578e1d7-d0ed-4d1f-be25-30606e3305ad" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://demoqa.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://demoqa.com</con:endpoint></con:endpoints><con:resource name="Book" path="/BookStore/v1/Book" id="bc5e5755-e7c8-49b6-beb6-2558362f72ab"><con:settings/><con:parameters><con:parameter><con:name>ISBN</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Book 1" id="79ea6bb4-544e-420e-8520-4d24afed08c0" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:book="https://demoqa.com/BookStore/v1/Book">book:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:book="https://demoqa.com/BookStore/v1/Book">book:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request1GetBook" id="79be4081-7591-4512-bd04-88915c75b014" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://demoqa.com</con:endpoint><con:request/><con:originalUri>https://demoqa.com/BookStore/v1/Book</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ISBN" value="${#Project#getISBN}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ISBN</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="5911f7c8-675a-47ab-8f34-c26f2a087c0f" name="TestSuite1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="84874be6-74d0-4949-bc52-d8f23636af00" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="RESTRequestGetAll" id="5e66e0c2-77a3-4bc1-b105-a78722809aa2"><con:settings/><con:config service="https://demoqa.com" methodName="Books 1" resourcePath="/BookStore/v1/Books" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="RESTRequestGetAll" id="37320e18-6083-498c-a1cf-eb9f81855d94" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://demoqa.com</con:endpoint><con:request/><con:originalUri>https://demoqa.com/BookStore/v1/Books</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="GroovyScriptISBN" id="1e49a559-aa75-4411-801b-89e284e81d7c"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+responseContent = testRunner.testCase.getTestStepByName("RESTRequestGetAll").getPropertyValue("response")
+slurperresponse = new JsonSlurper().parseText(responseContent)
+def IBSNResoonse = slurperresponse.books[0].isbn
+testRunner.testCase.testSuite.project.setPropertyValue("getISBN",IBSNResoonse)
+def titleBooks = slurperresponse.books[0].title
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("title", titleBooks)
+def authorBooks = slurperresponse.books[0].author
+testRunner.testCase.testSuite.project.setPropertyValue( "author",authorBooks)
+def pagesBooks = slurperresponse.books[0].pages.toString();
+testRunner.testCase.testSuite.setPropertyValue("pages",pagesBooks)
+def publisherBooks = slurperresponse.books[0].publisher
+testRunner.testCase.setPropertyValue("publisher",publisherBooks)
+</script></con:config></con:testStep><con:testStep type="restrequest" name="RESTRequestgetBook" id="d658fcf1-3ff5-437d-b13e-693c5c8b266f"><con:settings/><con:config service="https://demoqa.com" resourcePath="/BookStore/v1/Book" methodName="Book 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="RESTRequestgetBook" id="79be4081-7591-4512-bd04-88915c75b014" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://demoqa.com</con:endpoint><con:request/><con:originalUri>https://demoqa.com/BookStore/v1/Book</con:originalUri><con:assertion type="GroovyScriptAssertion" id="071a61e5-511e-4eb9-81cb-5706d23bc62a" name="Script Assertion"><con:configuration><scriptText>assert messageExchange.timeTaken &lt; 500
+
+def headers =  messageExchange.getResponseHeaders()
+assert ['HTTP/1.1 300 OK'] == headers["#status#"]</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ISBN" value="${#Project#getISBN}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ISBN</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="GroovyScriptComparison" id="397d5e03-4daa-4ca4-acb9-28c602ddfc7f"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+responseContent = testRunner.testCase.getTestStepByName("RESTRequestgetBook").getPropertyValue("response")
+slurperresponse = new JsonSlurper().parseText(responseContent)
+def bookTitle = slurperresponse.title
+def booksTitle = com.eviware.soapui.SoapUI.globalProperties.getPropertyValue("title")
+assert bookTitle == booksTitle
+def bookAuthor = slurperresponse.author
+def booksAuthor = testRunner.testCase.testSuite.project.getPropertyValue("author")
+assert bookAuthor == booksAuthor
+def bookPages = slurperresponse.pages.toString()
+def booksPages = testRunner.testCase.testSuite.getPropertyValue("pages")
+assert bookPages == booksPages 
+def bookPublisher = slurperresponse.publisher
+def booksPublisher = testRunner.testCase.getPropertyValue("publisher")
+assert bookPublisher == booksPublisher</script></con:config></con:testStep><con:properties><con:property><con:name>publisher</con:name><con:value>O'Reilly Media</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>pages</con:name><con:value>234</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>getISBN</con:name><con:value>9781449325862</con:value></con:property><con:property><con:name>author</con:name><con:value>Richard E. Silverman</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
